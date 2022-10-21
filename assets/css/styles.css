@@ -727,11 +727,9 @@ the website, in dark theme
   .p__products {
     border-radius: 1px;
     text-align: left;
-    color: black;
-    background-color: white;
   }
   .p__title {
-    color: white;
+    color: (--title-color);
     margin: 0rem 0 0rem 0rem;
     font-size: var(--h2-font-size);
     line-height: 140%;
