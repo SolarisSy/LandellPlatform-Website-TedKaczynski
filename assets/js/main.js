@@ -100,6 +100,7 @@ const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
 
+
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
@@ -116,7 +117,16 @@ if (selectedTheme) {
 }
 
 // Activate / deactivate the theme manually with the button
+let toggle = true;
+const imagem = document.getElementById("nav__logo_icon");
+
 themeButton.addEventListener('click', () => {
+    if (toggle) {
+        imagem.src = "assets/img/landellWhite.svg"
+    } else {
+        imagem.src = "assets/img/landellBlack.svg"
+    }
+    toggle = !toggle;
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
