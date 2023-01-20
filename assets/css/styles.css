@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;600;700&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -22,6 +23,7 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
+  --body-font-title: 'Merriweather', sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -269,6 +271,7 @@ the website, in dark theme
 }
 
 .nav__link {
+  font-family: var(--body-font-title);
   color: var(--title-color);
   font-weight: var(--font-medium);
   transition: .3s;
@@ -730,7 +733,7 @@ the website, in dark theme
   }
   .p__title {
     color: (--title-color);
-    margin: 0rem 0 0rem 0rem;
+    margin: 1.6rem 0 0rem 0rem;
     font-size: var(--h2-font-size);
     line-height: 140%;
   }
