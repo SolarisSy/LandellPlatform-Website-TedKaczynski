@@ -100,7 +100,6 @@ const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
 
-
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
@@ -122,9 +121,9 @@ const imagem = document.getElementById("nav__logo_icon");
 
 themeButton.addEventListener('click', () => {
     if (toggle) {
-        imagem.src = "assets/img/landellWhite.svg"
+      imagem.src = "assets/img/landellBlack.svg";
     } else {
-        imagem.src = "assets/img/landellBlack.svg"
+      imagem.src = "assets/img/landellWhite.svg";
     }
     toggle = !toggle;
     // Add or remove the dark / icon theme
@@ -134,6 +133,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
